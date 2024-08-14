@@ -10,12 +10,11 @@ const authTokens = [
 ];
 
 // const server = "api.cryptorank.io";
-const server = "api.cryptorank.io";
+const server = "msv";
 const now = new Date();
 const currentHour = now.getHours();
-
+var task = "start-farming";
 function checkActi() {
-  var task = "start-farming";
   switch (currentHour) {
     case 4:
     case 7:
@@ -62,11 +61,10 @@ function performAction() {
         );
       });
   });
-  i++;
 }
 
 // Set interval to 6 hours (21,600,000 milliseconds)
-setInterval(checkActi, 10000);
+setInterval(checkActi, 3600000);
 
 // Optionally, you can run the function immediately when the page loads
 checkActi();

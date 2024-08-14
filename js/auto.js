@@ -10,7 +10,7 @@ const authTokens = [
 ];
 
 // const server = "api.cryptorank.io";
-const server = "msv";
+const server = "api.cryptorank.io";
 const now = new Date();
 const currentHour = now.getHours();
 var task = "start-farming";
